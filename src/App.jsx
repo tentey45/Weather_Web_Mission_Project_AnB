@@ -81,7 +81,8 @@ export default function App() {
 
       {!weather && !notFound && (
         <section className="search-city section-message">
-          <img className="message-img" src="src/assets/search-svgrepo-com.svg" alt="" />
+          <img className="message-img" src="../src/assets/search-svgrepo-com.svg" alt="" />
+          
 
           <div>
             <h1>Search City</h1>
