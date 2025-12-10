@@ -199,5 +199,6 @@ body::before {
 .section-message img {
     height: 180px;
     width: fit-content;
+   margin-left:20px;
 
 }

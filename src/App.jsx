@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import search from './assets/search-svgrepo-com.svg'
+import notfound from './assets/notepad-svgrepo-com.svg'
 import { getWeatherIcon } from "./utils/getWeatherIcon";
 import importIcon from "./utils/importIcon";
 
@@ -96,7 +97,7 @@ export default function App() {
       {/* Not found image */}
       {notFound && (
         <div className="not-found section-message">
-          <img src="src/assets/notepad-svgrepo-com.svg" alt="Not found" />
+          <img src={notfound} alt="Not found" />
           <h2>City not found</h2>
         </div>
       )}
