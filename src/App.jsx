@@ -1,10 +1,11 @@
 import { useState } from "react";
 import "./App.css";
+import search from './assets/search-svgrepo-com.svg'
 import { getWeatherIcon } from "./utils/getWeatherIcon";
 import importIcon from "./utils/importIcon";
 
 const API_KEY = "9e77ec7492fee5be08be9e2c4a0b6493";
-
+  
 export default function App() {
   const [city, setCity] = useState("");
   const [weather, setWeather] = useState(null);
@@ -81,7 +82,7 @@ export default function App() {
 
       {!weather && !notFound && (
         <section className="search-city section-message">
-          <img className="message-img" src="../src/assets/search-svgrepo-com.svg" alt="" />
+          <img className="message-img" src={search} alt="" />
           
 
           <div>
